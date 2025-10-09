@@ -1,0 +1,9 @@
+python-terrier
+ir_datasets
+pyterrier-dr
+faiss-cpu
+pyyaml
+pandas
+numpy
+git+https://github.com/terrierteam/pyterrier_colbert.git
+git+https://github.com/terrierteam/pyterrier-quality.git

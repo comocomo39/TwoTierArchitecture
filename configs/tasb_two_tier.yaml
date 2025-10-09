@@ -1,0 +1,19 @@
+run_ivfpq: true
+run_hnsw:  true
+run_np:    false
+
+# FAISS IVFPQ
+ivf_nlist: null      # null -> 4*sqrt(N) clamp
+pq_m: 32
+pq_nbits: 8
+nprobe: 32
+nprobe_rel: 1.5
+
+# HNSW
+hnsw_ef_search: 64
+
+# gating
+margin_abs: 0.05
+entropy_tau: 1.0
+entropy_frac: 0.8
+entropy_topn: 10

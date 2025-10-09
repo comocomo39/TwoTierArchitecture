@@ -1,0 +1,17 @@
+# FAISS IVFPQ
+ivf_nlist: null        # null → calcolo automatico 4*sqrt(N), clampato
+pq_m: 32
+pq_nbits: 8
+nprobe: 32
+nprobe_rel: 1.5        # scaling log(topk)
+
+# gating
+margin_abs: 0.05
+entropy_tau: 1.0
+entropy_frac: 0.8
+entropy_topn: 10
+
+# naming files/indice (opzionale: puoi lasciarli così)
+index_name: "msmarco_all_tasb_ivfpq"
+docno_map: "one_ivfpq_map_docno.npy"
+high_ids:  "one_ivfpq_high_ids.npy"

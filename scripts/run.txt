@@ -1,0 +1,11 @@
+"""
+Come usarlo:
+    - TAS-B two-tier:
+        python -m scripts.run tasb_two_tier
+
+    - ColBERT two-tier:
+        python -m scripts.run colbert_two_tier
+
+    - TAS-B single-index:
+        python -m scripts.run tasb_single_index
+"""

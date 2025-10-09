@@ -1,0 +1,8 @@
+split: "irds:msmarco-passage/dev"
+sample_mode: "sample"            # "sample" | "all_queries"
+sample_topics: 1000
+neg_per_rel: 3
+max_docs: 20000                  # usato solo se sample_mode=sample
+high_share: 0.70
+topk: 50
+dataset_id_quality: "pyterrier-quality/qt5-tiny.msmarco-passage.cache"

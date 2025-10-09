@@ -1,0 +1,3 @@
+use_drive: false
+index_root: "./colbert_indexes"
+runs_dir: "./runs"

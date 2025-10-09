@@ -1,0 +1,17 @@
+# quali backends
+run_dense: true
+run_np: false    # placeholder
+
+# checkpoint ufficiale (come nel tuo notebook)
+checkpoint: "http://www.dcs.gla.ac.uk/~craigm/colbert.dnn.zip"
+
+# runtime FAISS/ColBERT
+nprobe: 32
+faiss_depth: 1024
+gpu_build: false
+
+# gating
+margin_abs: 0.05
+entropy_tau: 1.0
+entropy_frac: 0.8
+entropy_topn: 10

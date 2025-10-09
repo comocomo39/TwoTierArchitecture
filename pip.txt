@@ -1,0 +1,9 @@
+python -m venv .venv && source .venv/bin/activate    # (Windows: .venv\Scripts\activate)
+pip install --upgrade pip
+
+# dipendenze
+pip install python-terrier ir_datasets faiss-cpu
+pip install git+https://github.com/terrierteam/pyterrier-quality.git
+pip install pyterrier-dr
+# ColBERT (se ti serve colbert_two_tier)
+pip install git+https://github.com/terrierteam/pyterrier_colbert.git
