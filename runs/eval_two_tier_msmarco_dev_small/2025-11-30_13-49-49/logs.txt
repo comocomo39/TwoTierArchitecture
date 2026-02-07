@@ -1,0 +1,8 @@
+[13:49:49] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[13:49:49] [LOAD] topics=6980  qrels=7437
+[13:49:49] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[13:49:49] [MERGE] Query totali con vettore: 6980
+[13:49:49] [LOAD] Indici: msmarco_high_30pct_tasb_ivf_flat / msmarco_low_70pct_tasb_ivf_flat
+[13:50:01] === Two-Tier Evaluation + Smart Grid Search ===
+[13:50:01] [GRID] Avvio ricerca intelligente su 19 combinazioni...
+[13:50:01] [GRID] mode=margin               margin=0.1  entropy=-

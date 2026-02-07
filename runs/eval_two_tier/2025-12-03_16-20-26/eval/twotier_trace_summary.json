@@ -1,0 +1,19 @@
+{
+  "improved": 1487,
+  "worsened": 681,
+  "tie": 4810,
+  "improved_pct": 0.21309830897105186,
+  "worsened_pct": 0.09759243336199484,
+  "avg_delta_ndcg@k": 0.08715983018817035,
+  "avg_delta_mrr": 0.05915602795143086,
+  "avg_delta_recall@k": 0.21668099742046432,
+  "total_new_relevants_in_topk": 1561,
+  "low_calls": 3056,
+  "low_calls_pct": 0.43794783605617654,
+  "low_helped_pct": 0.48658376963350786,
+  "low_hurt_pct": 0.22284031413612565,
+  "low_avg_delta_ndcg@k": 0.19901874838123454,
+  "low_avg_delta_mrr": 0.1350755114676324,
+  "low_avg_delta_recall@k": 0.49476439790575916,
+  "low_total_new_relevants_in_topk": 1561
+}

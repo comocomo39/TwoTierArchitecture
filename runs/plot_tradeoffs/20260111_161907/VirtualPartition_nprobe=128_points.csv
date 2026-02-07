@@ -1,0 +1,14 @@
+method,time_ms,ndcg10,mrr,family,split
+HighOnly (20%),3.2,0.193,0.1773,HighOnly,20.0
+HighOnly (30%),4.5,0.2449,0.2222,HighOnly,30.0
+HighOnly (40%),5.8,0.2887,0.26,HighOnly,40.0
+HighOnly (50%),7.4,0.3171,0.2834,HighOnly,50.0
+"TwoTier (margin=0.5, 20%)",7.8,0.2644,0.2389,TwoTier m=0.5,20.0
+"TwoTier (margin=0.5, 30%)",8.8,0.2989,0.2689,TwoTier m=0.5,30.0
+"TwoTier (margin=0.5, 40%)",10.1,0.3256,0.2909,TwoTier m=0.5,40.0
+"TwoTier (margin=0.5, 50%)",10.6,0.3443,0.3066,TwoTier m=0.5,50.0
+"TwoTier (margin=1.0, 20%)",9.7,0.3049,0.274,TwoTier m=1.0,20.0
+"TwoTier (margin=1.0, 30%)",10.7,0.3267,0.2919,TwoTier m=1.0,30.0
+"TwoTier (margin=1.0, 40%)",11.4,0.3458,0.3071,TwoTier m=1.0,40.0
+"TwoTier (margin=1.0, 50%)",12.3,0.3591,0.318,TwoTier m=1.0,50.0
+Complete Index (Baseline),11.2,0.3895,0.3415,Baseline,

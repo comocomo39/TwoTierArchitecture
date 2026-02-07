@@ -1,0 +1,16 @@
+[17:53:43] INDEX_ROOT resolved: /workspace/indices
+[17:53:43] Split indices root:  /workspace/indices/Flat_Split_QualT5-Base
+[17:53:43] Grid: nprobe=[128, 8192] | margins=[0.5, 1.0] | splits=[(20, 80), (30, 70), (40, 60), (50, 50)]
+[17:53:43] TOPK=100 | FAISS_THREADS=32 | WARMUP_N=50 | MMAP=False
+[17:53:43] Queries Loaded: 6980 | Qrels filtered: 7437
+[17:53:43] 
+==============================
+[17:53:43] === START nprobe=128 ===
+[17:53:43] ==============================
+[17:53:43] 
+----------------------------------
+[17:53:43] --- Split 20-80 | nprobe=128 ---
+[17:53:43] ----------------------------------
+[17:54:12] >>> Running High-Only (20%) ...
+[17:55:39] DONE High-Only. Time: 86698.67ms | 12.42 ms/q
+[17:55:39] >>> Running Two-Tier (20-80) margin=0.5 ...

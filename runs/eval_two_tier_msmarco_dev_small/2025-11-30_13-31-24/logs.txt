@@ -1,0 +1,30 @@
+[13:31:24] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[13:31:24] [LOAD] topics=6980  qrels=7437
+[13:31:24] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[13:31:24] [MERGE] Query totali con vettore: 6980
+[13:31:24] [LOAD] Indici: msmarco_high_30pct_tasb_ivf_flat / msmarco_low_70pct_tasb_ivf_flat
+[13:31:35] === Two-Tier Evaluation + Smart Grid Search ===
+[13:31:35] [GRID] Avvio ricerca intelligente su 19 combinazioni...
+[13:31:35] [GRID] mode=margin               margin=0.01  entropy=-
+[13:31:37] [GRID] mode=margin               margin=0.015  entropy=-
+[13:31:39] [GRID] mode=margin               margin=0.019999999999999997  entropy=-
+[13:31:41] [GRID] mode=margin               margin=0.024999999999999998  entropy=-
+[13:31:43] [GRID] mode=margin               margin=0.03  entropy=-
+[13:31:45] [GRID] mode=margin               margin=0.034999999999999996  entropy=-
+[13:31:47] [GRID] mode=margin               margin=0.039999999999999994  entropy=-
+[13:31:49] [GRID] mode=margin               margin=0.045  entropy=-
+[13:31:51] [GRID] mode=margin               margin=0.049999999999999996  entropy=-
+[13:31:53] [GRID] mode=margin               margin=0.05499999999999999  entropy=-
+[13:31:55] [GRID] mode=margin               margin=0.05999999999999999  entropy=-
+[13:31:57] [GRID] mode=margin               margin=0.06499999999999999  entropy=-
+[13:31:59] [GRID] mode=margin               margin=0.06999999999999999  entropy=-
+[13:32:02] [GRID] mode=margin               margin=0.07499999999999998  entropy=-
+[13:32:04] [GRID] mode=margin               margin=0.07999999999999999  entropy=-
+[13:32:06] [GRID] mode=margin               margin=0.08499999999999998  entropy=-
+[13:32:09] [GRID] mode=margin               margin=0.08999999999999998  entropy=-
+[13:32:11] [GRID] mode=margin               margin=0.09499999999999999  entropy=-
+[13:32:14] [GRID] mode=entropy              margin=-  entropy=-
+[13:32:19] 🏆 Migliore: mode=entropy  margin=nan  entropy=0.0
+[13:32:19]     nDCG@10=0.3941  MRR=0.3376  MAP=0.3343
+[13:32:19]     P@10=0.0620  Recall@10=0.6025
+[13:32:19]     tempo medio=54.49 ms/query  attivazioni low-tier=100.00%

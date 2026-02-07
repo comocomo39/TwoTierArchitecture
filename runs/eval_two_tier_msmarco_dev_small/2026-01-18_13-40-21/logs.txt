@@ -1,0 +1,31 @@
+[13:40:21] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[13:40:21] [LOAD] topics=6980  qrels=7437
+[13:40:21] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[13:40:21] [MERGE] Query totali con vettore: 6980
+[13:40:21] [LOAD] Indici: msmarco_high_20pct_tasb_ivf_flat / msmarco_low_80pct_tasb_ivf_flat
+[13:40:43] === Two-Tier Evaluation + Smart Grid Search ===
+[13:40:43] [GRID] Avvio ricerca intelligente su 20 combinazioni...
+[13:40:43] [GRID] mode=margin               margin=0.1  entropy=-
+[13:40:47] [GRID] mode=margin               margin=0.2  entropy=-
+[13:40:52] [GRID] mode=margin               margin=0.5  entropy=-
+[13:40:59] [GRID] mode=margin               margin=1.0  entropy=-
+[13:41:07] [GRID] mode=margin               margin=1.5  entropy=-
+[13:41:17] [GRID] mode=margin               margin=2.0  entropy=-
+[13:41:26] [GRID] mode=margin               margin=2.5  entropy=-
+[13:41:37] [GRID] mode=margin               margin=3.0  entropy=-
+[13:41:47] [GRID] mode=margin               margin=3.5  entropy=-
+[13:41:58] [GRID] mode=margin               margin=5  entropy=-
+[13:42:09] [GRID] mode=entropy              margin=-  entropy=-
+[13:42:20] [GRID] mode=entropy              margin=-  entropy=0.1
+[13:42:31] [GRID] mode=entropy              margin=-  entropy=0.2
+[13:42:42] [GRID] mode=entropy              margin=-  entropy=0.30000000000000004
+[13:42:51] [GRID] mode=entropy              margin=-  entropy=0.4
+[13:43:00] [GRID] mode=entropy              margin=-  entropy=0.5
+[13:43:09] [GRID] mode=entropy              margin=-  entropy=0.6000000000000001
+[13:43:16] [GRID] mode=entropy              margin=-  entropy=0.7000000000000001
+[13:43:22] [GRID] mode=entropy              margin=-  entropy=0.8
+[13:43:27] [GRID] mode=entropy              margin=-  entropy=0.9
+[13:43:30] 🏆 Migliore: mode=entropy  margin=nan  entropy=0.0
+[13:43:30]     nDCG@10=0.3889  MRR=0.3409  MAP=0.3361
+[13:43:30]     P@10=0.0605  Recall@10=0.5833
+[13:43:30]     tempo medio=11.48 ms/query  attivazioni low-tier=100.00%

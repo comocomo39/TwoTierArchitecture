@@ -1,0 +1,3 @@
+[13:19:58] [subset] topics=6980  qrels=7437
+[13:20:02] [index] loaded 8,841,823 document IDs
+[13:20:02] [QualT5] Loading quality scores dynamically...

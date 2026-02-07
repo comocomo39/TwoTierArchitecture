@@ -1,0 +1,2 @@
+[17:01:32] [subset] msmarco-passage/dev/small qids: 6980
+[17:01:32] [subset] dopo filtro: topics=6980  qrels rows=7437

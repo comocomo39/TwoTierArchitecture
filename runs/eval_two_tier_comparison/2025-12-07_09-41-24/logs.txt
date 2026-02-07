@@ -1,0 +1,2 @@
+[09:41:24] === Physical Evaluation: Two-Tier vs High-Only | nprobe=128 ===
+[09:41:24] Queries Loaded: 6980

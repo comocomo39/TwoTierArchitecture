@@ -1,0 +1,48 @@
+[17:25:02] INDEX_ROOT resolved: /workspace/indices
+[17:25:02] Split indices root:  /workspace/indices/Flat_Split_QualT5-Base
+[17:25:02] Grid: nprobe=[128, 8192] | margins=[0.5, 1.0] | splits=[(20, 80), (30, 70), (40, 60), (50, 50)]
+[17:25:03] Queries Loaded: 6980 | Qrels filtered: 7437
+[17:25:03] 
+==============================
+[17:25:03] === START nprobe=128 ===
+[17:25:03] ==============================
+[17:25:03] 
+>>> High-Only | high=20% | nprobe=128
+[17:25:54] 
+>>> High-Only | high=30% | nprobe=128
+[17:27:09] 
+>>> High-Only | high=40% | nprobe=128
+[17:28:46] 
+>>> High-Only | high=50% | nprobe=128
+[17:30:47] 
+----------------------------------
+[17:30:47] --- TWO-TIER nprobe=128 margin=0.5 ---
+[17:30:47] ----------------------------------
+[17:30:47] 
+>>> Two-Tier | split=20-80 | nprobe=128 | margin=0.5
+[17:33:07] DONE Two-Tier. Time: 138208.61ms | 19.80 ms/q | Low Act: 44.1%
+[17:33:08] 
+>>> Two-Tier | split=30-70 | nprobe=128 | margin=0.5
+[17:35:44] DONE Two-Tier. Time: 154190.87ms | 22.09 ms/q | Low Act: 46.1%
+[17:35:45] 
+>>> Two-Tier | split=40-60 | nprobe=128 | margin=0.5
+[17:38:31] DONE Two-Tier. Time: 163554.14ms | 23.43 ms/q | Low Act: 46.7%
+[17:38:32] 
+>>> Two-Tier | split=50-50 | nprobe=128 | margin=0.5
+[17:41:31] DONE Two-Tier. Time: 177581.59ms | 25.44 ms/q | Low Act: 48.3%
+[17:41:33] Saved block: /workspace/runs/eval_multi_nprobe_margins_two_tier_mem_safe/2026-01-04_17-25-02/results_nprobe128_margin0p5.csv
+[17:41:33] 
+----------------------------------
+[17:41:33] --- TWO-TIER nprobe=128 margin=1.0 ---
+[17:41:33] ----------------------------------
+[17:41:33] 
+>>> Two-Tier | split=20-80 | nprobe=128 | margin=1.0
+[17:44:26] DONE Two-Tier. Time: 171212.11ms | 24.53 ms/q | Low Act: 64.9%
+[17:44:27] 
+>>> Two-Tier | split=30-70 | nprobe=128 | margin=1.0
+[17:47:31] DONE Two-Tier. Time: 182209.43ms | 26.10 ms/q | Low Act: 66.9%
+[17:47:32] 
+>>> Two-Tier | split=40-60 | nprobe=128 | margin=1.0
+[17:50:48] DONE Two-Tier. Time: 194272.50ms | 27.83 ms/q | Low Act: 67.8%
+[17:50:49] 
+>>> Two-Tier | split=50-50 | nprobe=128 | margin=1.0

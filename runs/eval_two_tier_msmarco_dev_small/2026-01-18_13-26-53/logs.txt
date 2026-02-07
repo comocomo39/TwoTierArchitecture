@@ -1,0 +1,22 @@
+[13:26:53] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[13:26:53] [LOAD] topics=6980  qrels=7437
+[13:26:53] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[13:26:53] [MERGE] Query totali con vettore: 6980
+[13:26:53] [LOAD] Indici: msmarco_high_50pct_tasb_ivf_flat / msmarco_low_50pct_tasb_ivf_flat
+[13:27:05] === Two-Tier Evaluation + Smart Grid Search ===
+[13:27:05] [GRID] Avvio ricerca intelligente su 11 combinazioni...
+[13:27:05] [GRID] mode=margin               margin=0.003  entropy=-
+[13:27:11] [GRID] mode=entropy              margin=-  entropy=-
+[13:27:23] [GRID] mode=entropy              margin=-  entropy=0.1
+[13:27:35] [GRID] mode=entropy              margin=-  entropy=0.2
+[13:27:46] [GRID] mode=entropy              margin=-  entropy=0.30000000000000004
+[13:27:56] [GRID] mode=entropy              margin=-  entropy=0.4
+[13:28:07] [GRID] mode=entropy              margin=-  entropy=0.5
+[13:28:17] [GRID] mode=entropy              margin=-  entropy=0.6000000000000001
+[13:28:26] [GRID] mode=entropy              margin=-  entropy=0.7000000000000001
+[13:28:35] [GRID] mode=entropy              margin=-  entropy=0.8
+[13:28:43] [GRID] mode=entropy              margin=-  entropy=0.9
+[13:28:50] 🏆 Migliore: mode=entropy  margin=nan  entropy=0.0
+[13:28:50]     nDCG@10=0.3872  MRR=0.3401  MAP=0.3350
+[13:28:50]     P@10=0.0601  Recall@10=0.5793
+[13:28:50]     tempo medio=11.70 ms/query  attivazioni low-tier=100.00%

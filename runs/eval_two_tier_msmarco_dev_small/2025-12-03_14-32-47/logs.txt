@@ -1,0 +1,5 @@
+[14:32:47] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[14:32:47] [LOAD] topics=6980  qrels=7437
+[14:32:47] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[14:32:47] [MERGE] Query totali con vettore: 6980
+[14:32:47] [LOAD] Indici: msmarco_high_20pct_tasb_ivf_flat / msmarco_low_80pct_tasb_ivf_flat

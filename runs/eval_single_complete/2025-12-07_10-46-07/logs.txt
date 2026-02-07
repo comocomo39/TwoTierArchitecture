@@ -1,0 +1,13 @@
+[10:46:07] Loading Index: /workspace/indices/msmarco_complete_tasb_ivf_flat (nprobe=128)
+[10:46:28] Loading QVecs: cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[10:46:28] Starting Benchmark...
+[10:47:46] ========================================
+[10:47:46] COMPLETE INDEX PERFORMANCE (Optimized)
+[10:47:46] Total Queries: 6980
+[10:47:46] Total Time   : 77387.47 ms
+[10:47:46] Per Query    : 11.09 ms/query
+[10:47:46] ========================================
+[10:47:46] Evaluating Quality...
+[10:47:47] 
+                 name  ndcg_cut_10  recip_rank
+0  Complete_Optimized     0.341214    0.297787

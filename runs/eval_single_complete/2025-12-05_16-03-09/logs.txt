@@ -1,0 +1,3 @@
+[16:03:09] Loading Index: /workspace/indices/msmarco_complete_tasb_ivf_flat (nprobe=8192)
+[16:03:21] Loading QVecs: cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[16:03:21] Starting Benchmark...

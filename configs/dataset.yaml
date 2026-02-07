@@ -1,8 +1,16 @@
 split: "irds:msmarco-passage/dev"
-sample_mode: "sample"            # "sample" | "all_queries"
-sample_topics: 1000
-neg_per_rel: 3
-max_docs: 20000                  # usato solo se sample_mode=sample
-high_share: 0.70
-topk: 50
-dataset_id_quality: "pyterrier-quality/qt5-tiny.msmarco-passage.cache"
+sample_mode: "all_queries"        # oppure "all_queries"
+sample_topics: 0
+neg_per_rel: 0
+max_docs: null
+high_share: 0.50
+topk: 100
+#dataset_id_quality: "pyterrier-quality/qt5-tiny.msmarco-passage.cache"
+dataset_id_quality: "pyterrier-quality/qt5-base.msmarco-passage.cache"
+
+#questi servono per fare esperimenti con i due modelli tiny e base in analyze_complete_qual 
+dataset_id_quality_tiny: "pyterrier-quality/qt5-tiny.msmarco-passage.cache"
+dataset_id_quality_base: "pyterrier-quality/qt5-base.msmarco-passage.cache"
+
+dataset_tag: msmarco
+

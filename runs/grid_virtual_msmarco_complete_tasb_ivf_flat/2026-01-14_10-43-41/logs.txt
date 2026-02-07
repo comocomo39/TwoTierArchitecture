@@ -1,0 +1,24 @@
+[10:43:41] [LOAD] Indice: /workspace/indices/msmarco_complete_tasb_ivf_flat
+[10:44:06] [QualT5] @quantiles fallita (Expected sha256 '3753c0cb62086301c82a599687cb9933621c91415a26b0ece6c5845db11a4678' but found 'c03cdf845be0c0e67fbbbbc51b592d3b0107cf48f69174c2a28170394c089f0b'). Fallback RAW).
+[10:44:25] [QualT5] RAW → percentili [0,1] nel sample.
+[10:44:33] [LOAD] Dataset & Query Cache...
+[10:44:33] [GRID] Start: 3 combinazioni (Shares: [0.6, 0.7, 0.8], Margins: [0.0])
+[10:44:33] --- [GRID] Computing Masks for High Share 0.60 ---
+[10:44:35]   > Run: Share=0.60, Margin=0.0000
+[10:45:45]     -> nDCG@10: 0.3034 | Time: 9.9ms | Rate: 0.0% | RR@10: 0.2700 | MAP: 0.2647
+[10:45:45] --- [GRID] Computing Masks for High Share 0.70 ---
+[10:45:47]   > Run: Share=0.70, Margin=0.0000
+[10:47:03]     -> nDCG@10: 0.3308 | Time: 10.8ms | Rate: 0.0% | RR@10: 0.2935 | MAP: 0.2877
+[10:47:03] --- [GRID] Computing Masks for High Share 0.80 ---
+[10:47:06]   > Run: Share=0.80, Margin=0.0000
+[10:48:29]     -> nDCG@10: 0.3561 | Time: 11.8ms | Rate: 0.0% | RR@10: 0.3149 | MAP: 0.3090
+[10:48:29] ============================================================
+[10:48:29] 🏆 BEST CONFIGURATION (Virtual Partitioning)
+[10:48:29]    High Share : 0.8
+[10:48:29]    Margin     : 0.0
+[10:48:29]    nDCG@10    : 0.3561
+[10:48:29]    MRR@10     : 0.3149
+[10:48:29]    Time (ms/q): 11.78
+[10:48:29]    Low Act %  : 0.00%
+[10:48:29] ============================================================
+[10:48:29] [SAVE] Risultati salvati in /workspace/runs/grid_virtual_msmarco_complete_tasb_ivf_flat/2026-01-14_10-43-41/grid_virtual_results.csv

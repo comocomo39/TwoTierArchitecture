@@ -1,0 +1,13 @@
+[13:14:36] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[13:14:36] [LOAD] topics=6980  qrels=7437
+[13:14:36] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[13:14:36] [MERGE] Query totali con vettore: 6980
+[13:14:36] [LOAD] Indici: msmarco_high_50pct_tasb_ivf_flat / msmarco_low_50pct_tasb_ivf_flat
+[13:14:53] === Two-Tier Evaluation + Smart Grid Search ===
+[13:14:53] [GRID] Avvio ricerca intelligente su 2 combinazioni...
+[13:14:53] [GRID] mode=margin               margin=0.003  entropy=-
+[13:14:59] [GRID] mode=entropy              margin=-  entropy=-
+[13:15:11] 🏆 Migliore: mode=entropy  margin=nan  entropy=0.0
+[13:15:11]     nDCG@10=0.3872  MRR=0.3401  MAP=0.3350
+[13:15:11]     P@10=0.0601  Recall@10=0.5793
+[13:15:11]     tempo medio=11.69 ms/query  attivazioni low-tier=100.00%

@@ -1,0 +1,12 @@
+[13:23:49] [subset] total_subset=8841823
+[13:23:54] [QualT5] @quantiles fallita (Expected sha256 'e0c1427e663bb018791947ab0b473ebe6eef41f18f0172ce6071fada1059bf75' but found 'a9b66b47d495170eebb66ce3a1b058243c7b1fa2163e63dec950d06841dedc63'). Fallback RAW).
+[13:24:15] [QualT5] RAW → percentili [0,1] nel sample.
+[13:24:38] [SPLIT] High=4410726 Low=4426228
+[13:24:40] Building in SPLIT mode (high/low) using MODE=flat
+[13:24:42] [DOCVEC cache] build: msmarco_high_50pct_tasb_ivf_flat_irds_msmarco-passage_dev_hs0.5 (N=4,410,726)
+[14:42:18] [BUILD] msmarco_high_50pct_tasb_ivf_flat  N=4,410,726 dim=768 nlist=8192 mode=flat
+[15:21:49] [DONE] msmarco_high_50pct_tasb_ivf_flat  (added=4,410,726, dim=768)
+[15:21:55] [DOCVEC cache] build: msmarco_low_50pct_tasb_ivf_flat_irds_msmarco-passage_dev_hs0.5 (N=4,426,228)
+[16:38:49] [BUILD] msmarco_low_50pct_tasb_ivf_flat  N=4,426,228 dim=768 nlist=8192 mode=flat
+[17:17:02] [DONE] msmarco_low_50pct_tasb_ivf_flat  (added=4,426,228, dim=768)
+[17:17:03] ===== COSTRUZIONE INDICI COMPLETATA =====

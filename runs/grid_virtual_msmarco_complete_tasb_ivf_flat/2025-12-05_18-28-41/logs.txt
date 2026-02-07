@@ -1,0 +1,1 @@
+[18:28:41] [LOAD] Indice: /workspace/indices/msmarco_complete_tasb_ivf_flat

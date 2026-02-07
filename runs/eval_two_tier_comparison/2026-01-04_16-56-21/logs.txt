@@ -1,0 +1,4 @@
+[16:56:22] === Physical Evaluation: Two-Tier vs High-Only | nprobe=8192 ===
+[16:56:22] Queries Loaded: 6980
+[16:56:42] 
+>>> Running Two-Tier (High + Low w/ Gating)...

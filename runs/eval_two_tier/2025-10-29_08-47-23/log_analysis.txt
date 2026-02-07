@@ -1,0 +1,96 @@
+
+=== LOG ANALYSIS 2025-10-29_08-50-56 ===
+Eval dir: runs/eval_two_tier/2025-10-29_08-47-23/eval
+Results CSV: runs/eval_two_tier/2025-10-29_08-47-23/eval/results.csv
+Trace CSV: runs/eval_two_tier/2025-10-29_08-47-23/eval/twotier_trace_per_query.csv
+Summary JSON: runs/eval_two_tier/2025-10-29_08-47-23/eval/twotier_trace_summary.json
+
+=== OVERALL IMPACT (GLOBAL METRICS) ===
+baseline_ndcg@10: 0.1384283320730451
+twotier_ndcg@10: 0.1676051353709275
+delta_ndcg@10: 0.029176803297882387
+baseline_mrr: 0.1214579562972129
+twotier_mrr: 0.1466093294000521
+delta_mrr: 0.025151373102839214
+baseline_P10: 0.0221776504297987
+twotier_P10: 0.027378223495701
+delta_P10: 0.005200573065902301
+
+=== GATING DIAGNOSTICS (PER-QUERY ANALYSIS) ===
+n_queries_total: 6980
+n_low_called: 2676
+pct_low_called: 0.3833810888252149
+win_rate_when_called: 0.3508968609865471
+loss_rate_when_called: 0.22159940209267565
+tie_rate_when_called: 0.42750373692077726
+uplift_mean_ndcg_when_called: 0.1107550429615316
+recall_gain_mean_when_called: 0.31352765321375187
+total_new_relevants_from_low: 959
+
+=== SUMMARY FROM EVAL (GROUND TRUTH FROM RUNTIME) ===
+improved: 939
+worsened: 593
+tie: 5448
+improved_pct: 0.13452722063037248
+worsened_pct: 0.08495702005730658
+avg_delta_ndcg@k: 0.04246138896347544
+avg_delta_mrr: 0.025151373102839138
+avg_delta_recall@k: 0.12020057306590258
+total_new_relevants_in_topk: 959
+low_calls: 2676
+low_calls_pct: 0.3833810888252149
+low_helped_pct: 0.3508968609865471
+low_hurt_pct: 0.22159940209267565
+low_avg_delta_ndcg@k: 0.1107550429615316
+low_avg_delta_mrr: 0.06560410473012601
+low_avg_delta_recall@k: 0.31352765321375187
+low_total_new_relevants_in_topk: 959
+
+=== TOP 20 HELPED QUERIES ===
+    qid  delta_ndcg@k  delta_mrr  delta_recall@k  gains_rel
+1083852           1.0        1.0             1.0          1
+1096227           1.0        1.0             1.0          1
+ 512825           1.0        1.0             1.0          1
+1041948           1.0        1.0             1.0          1
+1087327           1.0        1.0             1.0          1
+1091749           1.0        1.0             1.0          1
+1066716           1.0        1.0             1.0          1
+ 547018           1.0        1.0             1.0          1
+ 860266           1.0        1.0             1.0          1
+ 520636           1.0        1.0             1.0          1
+ 231292           1.0        1.0             1.0          1
+ 824080           1.0        1.0             1.0          1
+ 257885           1.0        1.0             1.0          1
+ 184235           1.0        1.0             1.0          1
+  47513           1.0        1.0             1.0          1
+ 691055           1.0        1.0             1.0          1
+ 399970           1.0        1.0             1.0          1
+ 380755           1.0        1.0             1.0          1
+1088475           1.0        1.0             2.0          2
+1082445           1.0        1.0             1.0          1
+
+=== TOP 20 HURT QUERIES ===
+    qid  delta_ndcg@k  delta_mrr  delta_recall@k  gains_rel
+ 379337     -1.000000  -1.000000            -1.0          0
+ 423878     -0.833952  -0.984375             0.0          0
+1081321     -0.826235  -0.981132             0.0          0
+1036005     -0.825417  -0.980769             0.0          0
+1098236     -0.821896  -0.979167             0.0          0
+1002145     -0.787254  -0.960000             0.0          0
+1043545     -0.768622  -0.947368             0.0          0
+ 249321     -0.755349  -0.937500             0.0          0
+ 896383     -0.744042  -0.928571             0.0          0
+1071545     -0.737350  -0.923077             0.0          0
+ 138266     -0.729762  -0.916667             0.0          0
+1007382     -0.729762  -0.916667             0.0          0
+ 484551     -0.710935  -0.900000             0.0          0
+1085457     -0.698970  -0.888889             0.0          0
+ 568841     -0.684535  -0.875000             0.0          0
+ 911056     -0.666667  -0.857143             0.0          0
+1085013     -0.666667  -0.857143             0.0          0
+1060795     -0.666667  -0.857143             0.0          0
+ 935707     -0.666667  -0.857143             0.0          0
+ 920717     -0.643793  -0.833333             0.0          0
+
+=== END OF ANALYSIS ===
+

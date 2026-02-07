@@ -1,0 +1,31 @@
+[13:34:10] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[13:34:10] [LOAD] topics=6980  qrels=7437
+[13:34:10] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[13:34:10] [MERGE] Query totali con vettore: 6980
+[13:34:10] [LOAD] Indici: msmarco_high_30pct_tasb_ivf_flat / msmarco_low_70pct_tasb_ivf_flat
+[13:34:21] === Two-Tier Evaluation + Smart Grid Search ===
+[13:34:21] [GRID] Avvio ricerca intelligente su 20 combinazioni...
+[13:34:21] [GRID] mode=margin               margin=0.01  entropy=-
+[13:34:23] [GRID] mode=margin               margin=0.02  entropy=-
+[13:34:25] [GRID] mode=margin               margin=0.03  entropy=-
+[13:34:27] [GRID] mode=margin               margin=0.04  entropy=-
+[13:34:29] [GRID] mode=margin               margin=0.05  entropy=-
+[13:34:31] [GRID] mode=margin               margin=0.060000000000000005  entropy=-
+[13:34:33] [GRID] mode=margin               margin=0.06999999999999999  entropy=-
+[13:34:35] [GRID] mode=margin               margin=0.08  entropy=-
+[13:34:38] [GRID] mode=margin               margin=0.09  entropy=-
+[13:34:40] [GRID] mode=margin               margin=0.09999999999999999  entropy=-
+[13:34:43] [GRID] mode=margin               margin=0.11  entropy=-
+[13:34:45] [GRID] mode=margin               margin=0.12  entropy=-
+[13:34:48] [GRID] mode=margin               margin=0.13  entropy=-
+[13:34:50] [GRID] mode=margin               margin=0.14  entropy=-
+[13:34:53] [GRID] mode=margin               margin=0.15000000000000002  entropy=-
+[13:34:55] [GRID] mode=margin               margin=0.16  entropy=-
+[13:34:58] [GRID] mode=margin               margin=0.17  entropy=-
+[13:35:01] [GRID] mode=margin               margin=0.18000000000000002  entropy=-
+[13:35:03] [GRID] mode=margin               margin=0.19  entropy=-
+[13:35:06] [GRID] mode=entropy              margin=-  entropy=-
+[13:35:12] 🏆 Migliore: mode=entropy  margin=nan  entropy=0.0
+[13:35:12]     nDCG@10=0.3941  MRR=0.3376  MAP=0.3343
+[13:35:12]     P@10=0.0620  Recall@10=0.6025
+[13:35:12]     tempo medio=54.41 ms/query  attivazioni low-tier=100.00%

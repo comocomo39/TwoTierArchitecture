@@ -1,0 +1,30 @@
+[13:52:03] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[13:52:03] [LOAD] topics=6980  qrels=7437
+[13:52:03] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[13:52:03] [MERGE] Query totali con vettore: 6980
+[13:52:03] [LOAD] Indici: msmarco_high_30pct_tasb_ivf_flat / msmarco_low_70pct_tasb_ivf_flat
+[13:52:15] === Two-Tier Evaluation + Smart Grid Search ===
+[13:52:15] [GRID] Avvio ricerca intelligente su 19 combinazioni...
+[13:52:15] [GRID] mode=margin               margin=0.1  entropy=-
+[13:52:26] [GRID] mode=margin               margin=0.15000000000000002  entropy=-
+[13:52:38] [GRID] mode=margin               margin=0.20000000000000004  entropy=-
+[13:52:51] [GRID] mode=margin               margin=0.25000000000000006  entropy=-
+[13:53:05] [GRID] mode=margin               margin=0.30000000000000004  entropy=-
+[13:53:20] [GRID] mode=margin               margin=0.3500000000000001  entropy=-
+[13:53:35] [GRID] mode=margin               margin=0.40000000000000013  entropy=-
+[13:53:51] [GRID] mode=margin               margin=0.45000000000000007  entropy=-
+[13:54:08] [GRID] mode=margin               margin=0.5000000000000001  entropy=-
+[13:54:25] [GRID] mode=margin               margin=0.5500000000000002  entropy=-
+[13:54:42] [GRID] mode=margin               margin=0.6000000000000002  entropy=-
+[13:55:01] [GRID] mode=margin               margin=0.6500000000000001  entropy=-
+[13:55:19] [GRID] mode=margin               margin=0.7000000000000002  entropy=-
+[13:55:38] [GRID] mode=margin               margin=0.7500000000000002  entropy=-
+[13:55:58] [GRID] mode=margin               margin=0.8000000000000002  entropy=-
+[13:56:18] [GRID] mode=margin               margin=0.8500000000000002  entropy=-
+[13:56:38] [GRID] mode=margin               margin=0.9000000000000002  entropy=-
+[13:56:58] [GRID] mode=margin               margin=0.9500000000000003  entropy=-
+[13:57:19] [GRID] mode=entropy              margin=-  entropy=-
+[13:57:46] 🏆 Migliore: mode=entropy  margin=nan  entropy=0.0
+[13:57:46]     nDCG@10=0.3945  MRR=0.3444  MAP=0.3387
+[13:57:46]     P@10=0.0626  Recall@10=0.5978
+[13:57:46]     tempo medio=54.25 ms/query  attivazioni low-tier=100.00%

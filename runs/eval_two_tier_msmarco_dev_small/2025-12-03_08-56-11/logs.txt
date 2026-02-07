@@ -1,0 +1,42 @@
+[08:56:11] [LOAD] Dataset: msmarco-passage/dev/small (ir_datasets)
+[08:56:11] [LOAD] topics=6980  qrels=7437
+[08:56:11] [CACHE] query_vec caricati da cache/qvec_irds:msmarco-passage_dev_recomputed.parquet
+[08:56:11] [MERGE] Query totali con vettore: 6980
+[08:56:11] [LOAD] Indici: msmarco_high_40pct_tasb_ivf_flat / msmarco_low_60pct_tasb_ivf_flat
+[08:56:24] === Two-Tier Evaluation + Smart Grid Search ===
+[08:56:24] [GRID] Avvio ricerca intelligente su 31 combinazioni...
+[08:56:24] [GRID] mode=margin               margin=-  entropy=-
+[08:56:48] [GRID] mode=margin               margin=0.1  entropy=-
+[08:57:17] [GRID] mode=margin               margin=0.2  entropy=-
+[08:57:49] [GRID] mode=margin               margin=0.30000000000000004  entropy=-
+[08:58:24] [GRID] mode=margin               margin=0.4  entropy=-
+[08:59:02] [GRID] mode=margin               margin=0.5  entropy=-
+[08:59:42] [GRID] mode=margin               margin=0.6000000000000001  entropy=-
+[09:00:23] [GRID] mode=margin               margin=0.7000000000000001  entropy=-
+[09:01:07] [GRID] mode=margin               margin=0.8  entropy=-
+[09:01:50] [GRID] mode=margin               margin=0.9  entropy=-
+[09:02:38] [GRID] mode=margin               margin=1.0  entropy=-
+[09:03:24] [GRID] mode=margin               margin=1.1  entropy=-
+[09:04:10] [GRID] mode=margin               margin=1.2000000000000002  entropy=-
+[09:04:57] [GRID] mode=margin               margin=1.3  entropy=-
+[09:05:45] [GRID] mode=margin               margin=1.4000000000000001  entropy=-
+[09:06:34] [GRID] mode=margin               margin=1.5  entropy=-
+[09:07:23] [GRID] mode=margin               margin=1.6  entropy=-
+[09:08:13] [GRID] mode=margin               margin=1.7000000000000002  entropy=-
+[09:09:03] [GRID] mode=margin               margin=1.8  entropy=-
+[09:09:53] [GRID] mode=margin               margin=1.9000000000000001  entropy=-
+[09:10:44] [GRID] mode=margin               margin=2.0  entropy=-
+[09:11:35] [GRID] mode=margin               margin=2.1  entropy=-
+[09:12:26] [GRID] mode=margin               margin=2.2  entropy=-
+[09:13:17] [GRID] mode=margin               margin=2.3000000000000003  entropy=-
+[09:14:09] [GRID] mode=margin               margin=2.4000000000000004  entropy=-
+[09:15:00] [GRID] mode=margin               margin=2.5  entropy=-
+[09:15:53] [GRID] mode=margin               margin=2.6  entropy=-
+[09:16:46] [GRID] mode=margin               margin=2.7  entropy=-
+[09:17:38] [GRID] mode=margin               margin=2.8000000000000003  entropy=-
+[09:18:31] [GRID] mode=margin               margin=2.9000000000000004  entropy=-
+[09:19:24] [GRID] mode=entropy              margin=-  entropy=-
+[09:20:21] 🏆 Migliore: mode=entropy  margin=nan  entropy=0.0
+[09:20:21]     nDCG@10=0.4048  MRR=0.3542  MAP=0.3496
+[09:20:21]     P@10=0.0633  Recall@10=0.6093
+[09:20:21]     tempo medio=56.90 ms/query  attivazioni low-tier=100.00%

@@ -1,0 +1,16 @@
+[16:32:58] [LOAD] Indice: /workspace/indices/msmarco_complete_tasb_ivf_flat
+[16:33:22] [QualT5] @quantiles fallita (Expected sha256 'e0c1427e663bb018791947ab0b473ebe6eef41f18f0172ce6071fada1059bf75' but found 'a9b66b47d495170eebb66ce3a1b058243c7b1fa2163e63dec950d06841dedc63'). Fallback RAW).
+[16:33:41] [QualT5] RAW → percentili [0,1] nel sample.
+[16:33:49] [LOAD] Dataset & Query Cache...
+[16:33:49] [GRID] Start: 12 combinazioni (Shares: [0.2, 0.3, 0.4, 0.5], Margins: [0.0, 0.5, 1])
+[16:33:49] --- [GRID] Computing Masks for High Share 0.20 ---
+[16:33:50]   > Run: Share=0.20, Margin=0.0000
+[16:52:58]     -> nDCG@10: 0.2063 | Time: 164.4ms | Rate: 0.0% | RR@10: 0.1889 | MAP: 0.1840
+[16:52:58]   > Run: Share=0.20, Margin=0.5000
+[17:41:01]     -> nDCG@10: 0.2809 | Time: 412.9ms | Rate: 42.3% | RR@10: 0.2530 | MAP: 0.2474
+[17:41:01]   > Run: Share=0.20, Margin=1.0000
+[18:41:31]     -> nDCG@10: 0.3215 | Time: 519.9ms | Rate: 63.0% | RR@10: 0.2879 | MAP: 0.2823
+[18:41:31] --- [GRID] Computing Masks for High Share 0.30 ---
+[18:41:33]   > Run: Share=0.30, Margin=0.0000
+[19:09:21]     -> nDCG@10: 0.2605 | Time: 238.6ms | Rate: 0.0% | RR@10: 0.2357 | MAP: 0.2302
+[19:09:21]   > Run: Share=0.30, Margin=0.5000

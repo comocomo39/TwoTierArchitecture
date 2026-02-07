@@ -1,0 +1,92 @@
+[18:52:16] [LOAD] Indice: /workspace/indices/msmarco_complete_tasb_ivf_flat
+[18:52:35] [QualT5] @quantiles fallita (Expected sha256 'e0c1427e663bb018791947ab0b473ebe6eef41f18f0172ce6071fada1059bf75' but found 'a9b66b47d495170eebb66ce3a1b058243c7b1fa2163e63dec950d06841dedc63'). Fallback RAW).
+[18:52:53] [QualT5] RAW → percentili [0,1] nel sample.
+[18:53:00] [LOAD] Dataset & Query Cache...
+[18:53:01] [GRID] Start: 35 combinazioni (Shares: [0.2, 0.3, 0.4, 0.5, 0.6, 0.7, 0.8], Margins: [0.0, 0.5, 1, 1.5, 2])
+[18:53:01] --- [GRID] Computing Masks for High Share 0.20 ---
+[18:53:02]   > Run: Share=0.20, Margin=0.0000
+[18:53:25]     -> nDCG@10: 0.1930 | Time: 3.2ms | Rate: 0.0%
+[18:53:25]   > Run: Share=0.20, Margin=0.5000
+[18:54:19]     -> nDCG@10: 0.2644 | Time: 7.7ms | Rate: 42.3%
+[18:54:19]   > Run: Share=0.20, Margin=1.0000
+[18:55:28]     -> nDCG@10: 0.3049 | Time: 9.8ms | Rate: 63.3%
+[18:55:28]   > Run: Share=0.20, Margin=1.5000
+[18:56:47]     -> nDCG@10: 0.3279 | Time: 11.1ms | Rate: 74.0%
+[18:56:47]   > Run: Share=0.20, Margin=2.0000
+[18:58:09]     -> nDCG@10: 0.3413 | Time: 11.7ms | Rate: 80.2%
+[18:58:09] --- [GRID] Computing Masks for High Share 0.30 ---
+[18:58:11]   > Run: Share=0.30, Margin=0.0000
+[18:58:44]     -> nDCG@10: 0.2449 | Time: 4.6ms | Rate: 0.0%
+[18:58:44]   > Run: Share=0.30, Margin=0.5000
+[18:59:47]     -> nDCG@10: 0.2989 | Time: 9.0ms | Rate: 44.3%
+[18:59:47]   > Run: Share=0.30, Margin=1.0000
+[19:01:04]     -> nDCG@10: 0.3267 | Time: 10.8ms | Rate: 64.9%
+[19:01:04]   > Run: Share=0.30, Margin=1.5000
+[19:02:26]     -> nDCG@10: 0.3441 | Time: 11.7ms | Rate: 75.3%
+[19:02:26]   > Run: Share=0.30, Margin=2.0000
+[19:03:55]     -> nDCG@10: 0.3557 | Time: 12.5ms | Rate: 82.0%
+[19:03:55] --- [GRID] Computing Masks for High Share 0.40 ---
+[19:03:56]   > Run: Share=0.40, Margin=0.0000
+[19:04:38]     -> nDCG@10: 0.2887 | Time: 5.9ms | Rate: 0.0%
+[19:04:38]   > Run: Share=0.40, Margin=0.5000
+[19:05:48]     -> nDCG@10: 0.3256 | Time: 9.8ms | Rate: 45.6%
+[19:05:48]   > Run: Share=0.40, Margin=1.0000
+[19:07:10]     -> nDCG@10: 0.3458 | Time: 11.7ms | Rate: 66.6%
+[19:07:10]   > Run: Share=0.40, Margin=1.5000
+[19:08:38]     -> nDCG@10: 0.3590 | Time: 12.5ms | Rate: 76.6%
+[19:08:38]   > Run: Share=0.40, Margin=2.0000
+[19:10:09]     -> nDCG@10: 0.3675 | Time: 13.0ms | Rate: 83.1%
+[19:10:09] --- [GRID] Computing Masks for High Share 0.50 ---
+[19:10:10]   > Run: Share=0.50, Margin=0.0000
+[19:11:02]     -> nDCG@10: 0.3171 | Time: 7.3ms | Rate: 0.0%
+[19:11:02]   > Run: Share=0.50, Margin=0.5000
+[19:12:18]     -> nDCG@10: 0.3443 | Time: 10.8ms | Rate: 46.7%
+[19:12:18]   > Run: Share=0.50, Margin=1.0000
+[19:13:46]     -> nDCG@10: 0.3591 | Time: 12.4ms | Rate: 68.0%
+[19:13:46]   > Run: Share=0.50, Margin=1.5000
+[19:15:18]     -> nDCG@10: 0.3686 | Time: 13.1ms | Rate: 78.1%
+[19:15:18]   > Run: Share=0.50, Margin=2.0000
+[19:16:55]     -> nDCG@10: 0.3739 | Time: 13.7ms | Rate: 84.5%
+[19:16:55] --- [GRID] Computing Masks for High Share 0.60 ---
+[19:16:56]   > Run: Share=0.60, Margin=0.0000
+[19:17:57]     -> nDCG@10: 0.3413 | Time: 8.6ms | Rate: 0.0%
+[19:17:57]   > Run: Share=0.60, Margin=0.5000
+[19:19:19]     -> nDCG@10: 0.3608 | Time: 11.6ms | Rate: 47.9%
+[19:19:19]   > Run: Share=0.60, Margin=1.0000
+[19:20:50]     -> nDCG@10: 0.3688 | Time: 13.0ms | Rate: 68.9%
+[19:20:50]   > Run: Share=0.60, Margin=1.5000
+[19:22:27]     -> nDCG@10: 0.3749 | Time: 13.7ms | Rate: 78.9%
+[19:22:27]   > Run: Share=0.60, Margin=2.0000
+[19:24:04]     -> nDCG@10: 0.3787 | Time: 13.9ms | Rate: 85.4%
+[19:24:04] --- [GRID] Computing Masks for High Share 0.70 ---
+[19:24:06]   > Run: Share=0.70, Margin=0.0000
+[19:25:16]     -> nDCG@10: 0.3615 | Time: 9.9ms | Rate: 0.0%
+[19:25:16]   > Run: Share=0.70, Margin=0.5000
+[19:26:43]     -> nDCG@10: 0.3736 | Time: 12.3ms | Rate: 48.6%
+[19:26:43]   > Run: Share=0.70, Margin=1.0000
+[19:28:17]     -> nDCG@10: 0.3782 | Time: 13.4ms | Rate: 69.7%
+[19:28:17]   > Run: Share=0.70, Margin=1.5000
+[19:29:55]     -> nDCG@10: 0.3823 | Time: 13.8ms | Rate: 79.9%
+[19:29:55]   > Run: Share=0.70, Margin=2.0000
+[19:31:34]     -> nDCG@10: 0.3838 | Time: 14.2ms | Rate: 86.3%
+[19:31:34] --- [GRID] Computing Masks for High Share 0.80 ---
+[19:31:36]   > Run: Share=0.80, Margin=0.0000
+[19:32:54]     -> nDCG@10: 0.3733 | Time: 11.0ms | Rate: 0.0%
+[19:32:54]   > Run: Share=0.80, Margin=0.5000
+[19:34:24]     -> nDCG@10: 0.3799 | Time: 12.7ms | Rate: 49.3%
+[19:34:24]   > Run: Share=0.80, Margin=1.0000
+[19:35:59]     -> nDCG@10: 0.3831 | Time: 13.6ms | Rate: 70.4%
+[19:35:59]   > Run: Share=0.80, Margin=1.5000
+[19:37:37]     -> nDCG@10: 0.3853 | Time: 13.8ms | Rate: 80.4%
+[19:37:37]   > Run: Share=0.80, Margin=2.0000
+[19:39:15]     -> nDCG@10: 0.3857 | Time: 14.0ms | Rate: 86.6%
+[19:39:15] ============================================================
+[19:39:15] 🏆 BEST CONFIGURATION (Virtual Partitioning)
+[19:39:15]    High Share : 0.8
+[19:39:15]    Margin     : 1.5
+[19:39:15]    nDCG@10    : 0.3853
+[19:39:15]    MRR@10     : 0.3382
+[19:39:15]    Time (ms/q): 13.83
+[19:39:15]    Low Act %  : 80.43%
+[19:39:15] ============================================================
+[19:39:15] [SAVE] Risultati salvati in /workspace/runs/grid_virtual_msmarco_complete_tasb_ivf_flat/2025-12-05_18-52-16/grid_virtual_results.csv

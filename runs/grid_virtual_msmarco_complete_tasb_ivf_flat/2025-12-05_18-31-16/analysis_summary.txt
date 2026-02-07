@@ -1,0 +1,16 @@
+
+    === REPORT ANALISI VIRTUAL PARTITIONING ===
+    File analizzato: runs/grid_virtual_msmarco_complete_tasb_ivf_flat/2025-12-05_18-31-16/grid_virtual_results.csv
+    
+    Miglior Qualità Assoluta:
+      - Share: 0.4
+      - Margin: 2.0
+      - nDCG@10: 0.3349
+      - Tempo: 6.82 ms
+      
+    Miglior Efficienza (Score/Time):
+      - Share: 0.2
+      - Margin: 0.0
+      - nDCG@10: 0.1735
+      - Tempo: 2.25 ms
+    

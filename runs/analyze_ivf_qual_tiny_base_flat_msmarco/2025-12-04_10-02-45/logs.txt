@@ -1,0 +1,48 @@
+[10:02:45] ===== ANALYZE IVF QUAL (Tiny vs Base) START =====
+[10:02:45] Index root : /workspace/indices
+[10:02:45] Index name : msmarco_complete_tasb_ivf_flat
+[10:02:45] Dataset tag: msmarco
+[10:02:45] Qual Tiny  : pyterrier-quality/qt5-base.msmarco-passage.cache
+[10:02:45] Qual Base  : pyterrier-quality/qt5-base.msmarco-passage.cache
+[10:02:45] min_docs_per_cluster: 10
+[10:02:45] bins       : 100
+[10:02:45] [LOAD] Index dir: /workspace/indices/msmarco_complete_tasb_ivf_flat
+[10:03:11] [META] mode=flat nlist=8192 nprobe_default=128 N=8836954 dim=768
+[10:03:11] [DATA] N doc: 8,836,954
+[10:03:11] [IVF] nlist=8192  assigned=8836954  missing=0
+[10:03:11] [Qual] Caricamento qualità da 'pyterrier-quality/qt5-base.msmarco-passage.cache' per 8,836,954 doc.
+[10:03:16] [QualT5] @quantiles fallita (Expected sha256 'e0c1427e663bb018791947ab0b473ebe6eef41f18f0172ce6071fada1059bf75' but found 'a9b66b47d495170eebb66ce3a1b058243c7b1fa2163e63dec950d06841dedc63'). Fallback RAW).
+[10:03:38] [QualT5] RAW → percentili [0,1] nel sample.
+[10:03:47] [Qual] Caricamento qualità da 'pyterrier-quality/qt5-base.msmarco-passage.cache' per 8,836,954 doc.
+[10:03:52] [QualT5] @quantiles fallita (Expected sha256 'e0c1427e663bb018791947ab0b473ebe6eef41f18f0172ce6071fada1059bf75' but found 'a9b66b47d495170eebb66ce3a1b058243c7b1fa2163e63dec950d06841dedc63'). Fallback RAW).
+[10:04:16] [QualT5] RAW → percentili [0,1] nel sample.
+[10:04:25] [THR] Calcolo soglie cluster-specific con low_share=0.20 (~20% low / 80% high), min_docs_per_cluster=10
+[10:04:40] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:04:40] [THR] Calcolo soglie cluster-specific con low_share=0.20 (~20% low / 80% high), min_docs_per_cluster=10
+[10:04:56] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:04:56] [THR] Calcolo soglie cluster-specific con low_share=0.30 (~30% low / 70% high), min_docs_per_cluster=10
+[10:05:11] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:05:11] [THR] Calcolo soglie cluster-specific con low_share=0.30 (~30% low / 70% high), min_docs_per_cluster=10
+[10:05:26] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:05:26] [THR] Calcolo soglie cluster-specific con low_share=0.40 (~40% low / 60% high), min_docs_per_cluster=10
+[10:05:41] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:05:42] [THR] Calcolo soglie cluster-specific con low_share=0.40 (~40% low / 60% high), min_docs_per_cluster=10
+[10:05:57] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:05:57] [THR] Calcolo soglie cluster-specific con low_share=0.50 (~50% low / 50% high), min_docs_per_cluster=10
+[10:06:12] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:06:13] [THR] Calcolo soglie cluster-specific con low_share=0.50 (~50% low / 50% high), min_docs_per_cluster=10
+[10:06:28] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:06:28] [THR] Calcolo soglie cluster-specific con low_share=0.60 (~60% low / 40% high), min_docs_per_cluster=10
+[10:06:43] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:06:44] [THR] Calcolo soglie cluster-specific con low_share=0.60 (~60% low / 40% high), min_docs_per_cluster=10
+[10:06:59] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:06:59] [THR] Calcolo soglie cluster-specific con low_share=0.70 (~70% low / 30% high), min_docs_per_cluster=10
+[10:07:15] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:07:15] [THR] Calcolo soglie cluster-specific con low_share=0.70 (~70% low / 30% high), min_docs_per_cluster=10
+[10:07:31] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:07:31] [THR] Calcolo soglie cluster-specific con low_share=0.80 (~80% low / 19% high), min_docs_per_cluster=10
+[10:07:46] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:07:47] [THR] Calcolo soglie cluster-specific con low_share=0.80 (~80% low / 19% high), min_docs_per_cluster=10
+[10:08:02] [THR] Soglie calcolate per 8093 cluster (su 8192 totali con almeno 10 doc validi).
+[10:08:04] [PLOT] Figura multipla salvata in /workspace/runs/analyze_ivf_qual_tiny_base_flat_msmarco/2025-12-04_10-02-45/ivf_cluster_thresholds_tiny_vs_base_grid.png
+[10:08:04] ===== ANALYZE IVF QUAL (Tiny vs Base) DONE =====

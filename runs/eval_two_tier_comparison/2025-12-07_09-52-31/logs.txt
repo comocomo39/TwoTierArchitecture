@@ -1,0 +1,12 @@
+[09:52:31] === Physical Evaluation: Two-Tier vs High-Only | nprobe=128 ===
+[09:52:32] Queries Loaded: 6980
+[09:52:57] 
+>>> Running Two-Tier (High + Low w/ Gating)...
+[09:53:48] DONE Two-Tier. Time: 51373.47ms | 7.36 ms/q | Acts: 46.1%
+[09:53:48] 
+>>> Running High-Only (Single Tier)...
+[09:54:14] DONE High-Only. Time: 26125.53ms | 3.74 ms/q
+[09:54:14] 
+=== COMPARATIVE RESULTS ===
+[09:54:16] 
+Results saved to /workspace/runs/eval_two_tier_comparison/2025-12-07_09-52-31/comparison_results.csv
