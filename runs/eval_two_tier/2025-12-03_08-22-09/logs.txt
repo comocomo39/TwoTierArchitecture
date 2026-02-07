@@ -1,4 +1,0 @@
-[08:22:10] [subset] msmarco-passage/dev/small qids: 6980
-[08:22:10] [subset] dopo filtro: topics=6980  qrels rows=7437
-[08:22:19] [coverage] queries con almeno un rilevante: 6978 / 6980
-[08:22:20] [queries] qvec disponibili per dev/small (coperti): 6978

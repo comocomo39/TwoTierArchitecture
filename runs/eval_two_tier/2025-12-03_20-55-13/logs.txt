@@ -1,9 +1,0 @@
-[20:55:14] [subset] msmarco-passage/dev/small qids: 6980
-[20:55:14] [subset] dopo filtro: topics=6980  qrels rows=7437
-[20:55:22] [coverage] queries con almeno un rilevante: 6978 / 6980
-[20:55:23] [queries] qvec disponibili per dev/small (coperti): 6978
-[20:57:51] [High30_only] retrieve_time = 124191.7 ms  (17.80 ms/query)
-[21:05:05] [TwoTier_High30+Low70] retrieve_time = 308420.0 ms  (44.20 ms/query)
-[21:10:15] [EVAL] aggregati salvati in /workspace/runs/eval_two_tier/2025-12-03_20-55-13/eval
-[21:17:33] [TwoTier TRACE] low_calls=4654 (66.7%) helped=36.4% hurt=26.9%, avg ΔnDCG@100: 0.1363, total_new_rel=1773
-[21:17:33] [DONE] Output in /workspace/runs/eval_two_tier/2025-12-03_20-55-13/eval
