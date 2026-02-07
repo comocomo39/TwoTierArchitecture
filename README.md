@@ -387,8 +387,9 @@ This file is used by:
 ---
 
 ### Bibliography: 
-Neural Passage Quality Estimation for Static Pruning : 'https://arxiv.org/pdf/2407.12170'
-Lecture Notes on Neural Information Retrieval: 'https://arxiv.org/abs/2207.13443'
+- Neural Passage Quality Estimation for Static Pruning : 'https://arxiv.org/pdf/2407.12170'
+- Lecture Notes on Neural Information Retrieval: 'https://arxiv.org/abs/2207.13443'
+
 
 
 
