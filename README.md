@@ -24,6 +24,65 @@ A key convention is the `runs/` folder: most scripts write **timestamped** outpu
    - Summarize results from run outputs.
 
 ---
+## Method overview (what this repository implements)
+
+Dense first-stage retrieval can be viewed as a nearest-neighbor search problem in a shared embedding space: each query is encoded into a vector and the system returns the top-*k* passages whose vectors are most similar. At realistic collection scale, efficiency is influenced not only by the index and ANN algorithm, but also by the **composition of the candidate pool**: large corpora contain a long tail of repetitive, noisy, or poorly structured passages that are less likely to be useful as first-stage candidates. Indexing and searching this tail can add substantial cost while contributing limited utility to the final top-*k*.
+
+This project adopts the idea that a **query-independent passage quality score** can act as an *indexing prior* to restructure the first-stage search space. Each passage *p* is assigned an offline scalar quality score *Q(p)* (here, from QualT5). For a chosen **high-tier share** *α* (reported as a percentage), passages are split into:
+- **High tier**: the top-*α* fraction by quality (default search space)
+- **Low tier**: the remaining passages (recovery space)
+
+The goal is not to claim that low-tier passages are never relevant, but to consult them **selectively** to reduce average cost without systematically harming retrieval behavior.
+
+### Two ways to operationalize tiering
+
+This repository studies two architectural realizations of tiered retrieval:
+
+1) **Two-Tier (physical split)**  
+Quality is used to partition the corpus into two subsets, and **two separate indexes** are built: one over the high tier and one over the low tier.
+
+<p align="center">
+  <img src="images/diagrams/tt_creation.png" width="900" />
+</p>
+
+2) **Virtual Partitioning (logical split)**  
+A **single full index** is built over the entire corpus. High/low tier membership is enforced **at query time** via logical filtering (masks), creating “virtual” partitions within the same index.
+
+<p align="center">
+  <img src="images/diagrams/vp_creation.png" width="900" />
+</p>
+
+This separation isolates the methodological question: do the benefits of tiered retrieval come mainly from physically separating indexes, or can similar benefits be achieved via logical partitioning within one index?
+
+### Query-time execution and gating
+
+Tiering only improves efficiency if the low tier is not searched for every query. Therefore, both architectures follow a two-step execution pattern:
+1) **Search the high tier by default** and inspect the high-tier top-*k* output.
+2) **Trigger a low-tier fallback only when the high-tier output indicates uncertainty** (a gating rule based on the score distribution of the high-tier results, e.g., margin/dispersion signals).
+
+**Closed-gate outcome (no fallback):** the system returns high-tier results only.
+
+<p align="center">
+  <img src="images/diagrams/no_gating.png" width="900" />
+</p>
+
+**Open-gate outcome (fallback):** a second pass is executed on the low tier, then candidates are merged by score and truncated to top-*k*. Because the same encoder and similarity function are used across tiers, scores are directly comparable, and the final output is the global top-*k* over high ∪ low candidates.
+
+<p align="center">
+  <img src="images/diagrams/tt_gating.png" width="900" />
+</p>
+
+<p align="center">
+  <img src="images/diagrams/vp_gating.png" width="900" />
+</p>
+
+### Coarse assignment reuse (Two-Tier vs Virtual Partitioning)
+
+A key difference between the two architectures is whether the two passes can reuse the same IVF **coarse routing** (cluster assignment):
+- In **Two-Tier**, high and low are separate indexes and (in this setup) do not share the same quantizer, so coarse assignments are not reused across tiers.
+- In **Virtual Partitioning**, both passes query the same physical index and share the same IVF clusters, so the coarse assignment computed in the high-tier pass can be reused in the low-tier pass, reducing duplicated routing work.
+
+---
 
 ## `runs/` directory (where outputs go)
 
@@ -330,6 +389,7 @@ This file is used by:
 ## Keeping the repo clean
 
 If you don’t want to commit experiments/logs:
+
 
 
 
