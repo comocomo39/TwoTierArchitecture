@@ -1,4 +1,0 @@
-[13:20:19] [subset] topics=6980  qrels=7437
-[13:20:23] [index] loaded 8,841,823 document IDs
-[13:20:23] [QualT5] Loading quality scores dynamically...
-[13:20:25] [QualT5] @quantiles fallita (HTTP Error 401: Unauthorized). Fallback RAW).

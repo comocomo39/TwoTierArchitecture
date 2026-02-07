@@ -1,4 +1,0 @@
-[13:22:35] [subset] topics=6980  qrels=7437
-[13:22:39] [index] loaded 8,841,823 document IDs
-[13:22:39] [QualT5] Loading quality scores dynamically...
-[13:22:50] [SPLIT cache] High=2657838 Low=6183985 (cache hit)

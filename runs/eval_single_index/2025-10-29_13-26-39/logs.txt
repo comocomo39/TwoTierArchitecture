@@ -1,6 +1,0 @@
-[13:26:40] [subset] topics=6980  qrels=7437
-[13:26:44] [index] loaded 8,841,823 document IDs
-[13:26:44] [QualT5] Caricamento qualità per 8,841,823 documenti...
-[13:26:46] [QualT5] @quantiles fallita (Expected sha256 '3753c0cb62086301c82a599687cb9933621c91415a26b0ece6c5845db11a4678' but found 'c03cdf845be0c0e67fbbbbc51b592d3b0107cf48f69174c2a28170394c089f0b'). Fallback RAW).
-[13:27:04] [QualT5] RAW → percentili [0,1] nel sample.
-[13:27:08] [SPLIT] High=2,657,838 Low=6,183,985 (cut=0.70)
