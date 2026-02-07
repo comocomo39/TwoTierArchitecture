@@ -1,3 +1,0 @@
-[17:11:27] === Two-Tier Physical Eval (Optimized) | nprobe=128 ===
-[17:11:27] Queries Loaded: 6980
-[17:11:46] Starting Retrieval...
