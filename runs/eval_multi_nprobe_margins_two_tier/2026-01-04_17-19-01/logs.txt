@@ -1,8 +1,0 @@
-[17:19:01] INDEX_ROOT resolved: /workspace/indices
-[17:19:01] Split indices root:  /workspace/indices/Flat_Split_QualT5-Base
-[17:19:01] Grid: nprobe=[128, 8192] | margins=[0.5, 1.0] | splits=[(20, 80), (30, 70), (40, 60), (50, 50)]
-[17:19:01] Queries Loaded: 6980 | Qrels filtered: 7437
-[17:19:01] 
-==============================
-[17:19:01] === START nprobe=128 ===
-[17:19:01] ==============================
